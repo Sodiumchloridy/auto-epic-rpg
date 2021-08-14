@@ -2,4 +2,4 @@
 Epic RPG is a discord rpg game.
 This bot is against the rules for botting.
 This bot will periodically run commands such as "rpg hunt", "rpg heal" etc.
-This bot cannot solve captchas so it will stop when encountering Epic Guard captchas.
+This bot cannot solve captchas so it will stop when encountering Epic Guard captchas so that you don't get banned for 24 hours.
