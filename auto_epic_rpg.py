@@ -7,9 +7,8 @@ from threading import Thread
 #Install Discum module using pip, other modules should come with python.
 
 bot = discum.Client(token='YOUR_DISCORD_TOKEN', log={"console":True, "file":False})
-target_channel = "YOUR_DISCORD_CHANNEL_ID" #Use a private server with Epic RPG bot just in case anything happens and you can monitor it.
+target_channel = "YOUR_DISCORD_CHANNEL_ID" #Use a private server channel with Epic RPG bot just in case anything happens and you can monitor it.
 work = "rpg chainsaw" #Your desired work command.
-guild_id = "YOUR_DISCORD_SERVER_ID"
 
 def autorpg():
     print("Starting bot")
@@ -50,7 +49,7 @@ def autorpg():
 def antiguard(resp):
     if resp.event.message:
         m = resp.parsed.auto()
-        if m['guild_id'] == guild_id and m['channel_id'] == target_channel:
+        if m['channel_id'] == target_channel:
             if 'rpg jail' in m['content']:
                 os._exit(0)
 
